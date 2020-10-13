@@ -10,14 +10,15 @@
 </head>
 
 <body>
-    <form action="post">
-        <input name="screws" class="half" type="number" placeholder="Anzahl Schrauben" required>
+    <form action="javascript:calculate()">
+        <input id="screws" class="half" type="number" placeholder="Anzahl Schrauben" default="0">
         <br>
-        <input name="nuts" class="half" type="number" placeholder="Anzahl Muttern" required>
+        <input id="nuts" class="half" type="number" placeholder="Anzahl Muttern" default="0">
         <br>
-        <input name="disks" class="half" type="number" placeholder="Anzahl Unterlegsscheiben" required>
+        <input id="grommets" class="half" type="number" placeholder="Anzahl Unterlegsscheiben" default="0">
         <br>
         <input class="narrow button" type="reset" value="Reset">
         <input class="narrow button" type="submit" value="Send">
     </form>
+	<p id="price"></p>
 </body>
